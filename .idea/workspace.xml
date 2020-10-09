@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,12 +14,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca687691-0617-44be-9ded-361c88f92769" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/perfumejs_host/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/after_experiment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/after_launch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/after_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/before_close.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/before_experiment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/before_run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/interaction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/config_web_template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/generate_config_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/inject_perfume.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/pull_hosts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/sample_random_websites.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/serve_local_websites.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tranco/top-1m.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VU-green-it.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VU-green-it.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/perfume_js/AddJS.py" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/perfume_js/AddJS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/trepn/Trepn.py" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/trepn/Trepn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-runner/devices.json" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/devices.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-runner/examples/batterystats/Scripts/power_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-runner/examples/batterystats/config_web.json" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/examples/batterystats/config_web.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfumejs_host/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfumejs_host/hosts_mapping.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfumejs_host/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfumejs_host/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfumejs_host/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfumejs_host/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfumejs_host/static/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfumejs_host/static/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfumejs_host/templates/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,7 +71,72 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts" />
+      <recent name="$PROJECT_DIR$/android-runner/examples/perfume_trepn" />
+      <recent name="$PROJECT_DIR$/experiment-configurations/perfume-trepn-metrics/scripts" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/host-puller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/scripts/local_websites/static" />
+      <recent name="$PROJECT_DIR$/power_profiles" />
+      <recent name="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.pull_host">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="VU-green-it" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/host-puller/venv/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pull_host" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="VU-green-it" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYTHONPATH" value="$PROJECT_DIR$/host-puller" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/host-puller" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/host-puller/pull_host.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.pull_host" />
+      <item itemvalue="Python.Unnamed" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,5 +159,83 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="451" y="210" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601215125394">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="451" y="210" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215125394" />
+    <state x="671" y="354" width="634" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601227156839">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="671" y="354" width="634" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601227156839" />
+    <state x="167" y="125" width="1653" height="855" key="DiffContextDialog" timestamp="1602257645090">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="167" y="125" width="1653" height="855" key="DiffContextDialog/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1602257645090" />
+    <state x="833" y="320" width="735" height="516" key="EnvironmentVariablesDialog" timestamp="1601215123989">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="833" y="320" width="735" height="516" key="EnvironmentVariablesDialog/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215123989" />
+    <state x="771" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1601214809066">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="771" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601214809066" />
+    <state width="1830" height="336" key="GridCell.Tab.0.bottom" timestamp="1601215313204">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="336" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215313204" />
+    <state width="1830" height="336" key="GridCell.Tab.0.center" timestamp="1601215313204">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="336" key="GridCell.Tab.0.center/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215313204" />
+    <state width="1830" height="336" key="GridCell.Tab.0.left" timestamp="1601215313204">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="336" key="GridCell.Tab.0.left/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215313204" />
+    <state width="1830" height="336" key="GridCell.Tab.0.right" timestamp="1601215313204">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="336" key="GridCell.Tab.0.right/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215313204" />
+    <state width="1830" height="336" key="GridCell.Tab.1.bottom" timestamp="1601215313204">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="336" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215313204" />
+    <state width="1830" height="336" key="GridCell.Tab.1.center" timestamp="1601215313204">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="336" key="GridCell.Tab.1.center/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215313204" />
+    <state width="1830" height="336" key="GridCell.Tab.1.left" timestamp="1601215313204">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="336" key="GridCell.Tab.1.left/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215313204" />
+    <state width="1830" height="336" key="GridCell.Tab.1.right" timestamp="1601215313204">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="336" key="GridCell.Tab.1.right/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215313204" />
+    <state x="684" y="291" width="1055" height="522" key="find.popup" timestamp="1602258161929">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="684" y="291" width="1055" height="522" key="find.popup/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1602258161929" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1602271809738">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1602271809738" />
+    <state x="718" y="455" width="540" height="194" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602268695157">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="718" y="455" width="540" height="194" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1602268695157" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/pull_hosts.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

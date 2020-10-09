@@ -1,0 +1,78 @@
+{
+    "devices": {
+        "nexus5x": {}
+    },
+    "type": "web",
+    "duration": 10000,
+    "time_between_run": 2000,
+    "monkeyrunner_path": "/home/user/Android/Sdk/tools/bin/monkeyrunner",
+    "powerprofile_path": "power_profiles/power_profile_nexus5x.xml",
+    "systrace_path": "/home/corneliu/Android/Sdk/platform-tools/systrace/systrace.py",
+    "browsers": [
+        "chrome"
+    ],
+    "repetitions": 1,
+    "paths": [
+        "http://192.168.100.14:9191/local_websites/www.ur7.us",
+        "http://192.168.100.14:9191/local_websites/www.parseplatform.org",
+        "http://192.168.100.14:9191/local_websites/www.jinhongchina.com",
+        "http://192.168.100.14:9191/local_websites/www.sjmc.hk",
+        "http://192.168.100.14:9191/local_websites/www.fbetpay.com",
+        "http://192.168.100.14:9191/local_websites/www.powerliftingtechnique.com",
+        "http://192.168.100.14:9191/local_websites/www.blinn.edu",
+        "http://192.168.100.14:9191/local_websites/www.datarecovery.com",
+        "http://192.168.100.14:9191/local_websites/www.udntv.com.tw",
+        "http://192.168.100.14:9191/local_websites/www.thc.org",
+        "http://192.168.100.14:9191/local_websites/www.terramadresalonedelgusto.com",
+        "http://192.168.100.14:9191/local_websites/www.zlgmcu.com",
+        "http://192.168.100.14:9191/local_websites/www.kinesissurvey.com",
+        "http://192.168.100.14:9191/local_websites/www.finunited.com",
+        "http://192.168.100.14:9191/local_websites/www.dyypos.com",
+        "http://192.168.100.14:9191/local_websites/www.presszoom.com",
+        "http://192.168.100.14:9191/local_websites/www.marcelawandenkolk.com.br",
+        "http://192.168.100.14:9191/local_websites/www.neighbor.com",
+        "http://192.168.100.14:9191/local_websites/www.kpm-berlin.com",
+        "http://192.168.100.14:9191/local_websites/www.timeinc.com",
+        "http://192.168.100.14:9191/local_websites/www.ticketmaster.se",
+        "http://192.168.100.14:9191/local_websites/www.sloansportsconference.com",
+        "http://192.168.100.14:9191/local_websites/www.brilliant-study.uz",
+        "http://192.168.100.14:9191/local_websites/www.comau.com",
+        "http://192.168.100.14:9191/local_websites/www.phocassoftware.com",
+        "http://192.168.100.14:9191/local_websites/www.ceoxaydung.com.vn",
+        "http://192.168.100.14:9191/local_websites/www.http2.pro",
+        "http://192.168.100.14:9191/local_websites/www.helikon.bg",
+        "http://192.168.100.14:9191/local_websites/www.jeuxdefriv250.net",
+        "http://192.168.100.14:9191/local_websites/www.skullspiration.com"
+    ],
+    "clear_cache": true,
+    "scripts": {
+        "after_experiment": "Scripts/after_experiment.py",
+        "before_close": "Scripts/before_close.py",
+        "before_experiment": "Scripts/before_experiment.py",
+        "before_run": "Scripts/before_run.py",
+        "after_launch": "Scripts/after_launch.py",
+        "interaction": [
+            {
+                "timeout": 500,
+                "logcat_regex": "some keyword",
+                "path": "Scripts/interaction.py",
+                "type": "python3"
+            }
+        ],
+        "after_run": "Scripts/after_run.py"
+    },
+    "profilers": {
+        "batterystats": {
+            "cleanup": true
+        },
+        "perfume_js": {
+            "metrics": [
+                "fp",
+                "fcp",
+                "storageEstimate",
+                "navigationTiming",
+                "networkInformation"
+            ]
+        }
+    }
+}

@@ -99,15 +99,17 @@ class Trepn(Profiler):
         newest_db = db[len(db) - 1]
         csv_filename = '%s_%s.csv' % (device.id, op.splitext(newest_db)[0])
         if newest_db:
-            device.shell('am broadcast -a com.quicinc.trepn.export_to_csv '
-                         '-e com.quicinc.trepn.export_db_input_file "%s" '
-                         '-e com.quicinc.trepn.export_csv_output_file "%s"' % (newest_db, csv_filename))
+            command = 'am broadcast -a com.quicinc.trepn.export_to_csv ' \
+                         '-e com.quicinc.trepn.export_db_input_file "%s" ' \
+                         '-e com.quicinc.trepn.export_csv_output_file "%s"' % (newest_db, csv_filename)
+            print(command)
+            device.shell(command)
             time.sleep(1)  # adb returns instantly, while the command takes time
             device.pull(op.join(Trepn.DEVICE_PATH, csv_filename), self.output_dir)
             time.sleep(1)  # adb returns instantly, while the command takes time
             # Delete the originals
-            device.shell('rm %s' % op.join(Trepn.DEVICE_PATH, newest_db))
-            device.shell('rm %s' % op.join(Trepn.DEVICE_PATH, csv_filename))
+            # device.shell('rm %s' % op.join(Trepn.DEVICE_PATH, newest_db))
+            # device.shell('rm %s' % op.join(Trepn.DEVICE_PATH, csv_filename))
         self.filter_results(op.join(self.output_dir, csv_filename))
 
     @staticmethod
