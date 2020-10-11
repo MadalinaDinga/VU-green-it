@@ -14,40 +14,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca687691-0617-44be-9ded-361c88f92769" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/after_experiment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/after_launch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/after_run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/before_close.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/before_experiment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/before_run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts/interaction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/config_web_template.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/generate_config_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/inject_perfume.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/pull_hosts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/sample_random_websites.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/serve_local_websites.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tranco/top-1m.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VU-green-it.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VU-green-it.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/static/send_perfume_metrics.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/perfume_js/AddJS.py" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/perfume_js/AddJS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/trepn/Trepn.py" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/trepn/Trepn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-runner/devices.json" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/devices.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-runner/examples/batterystats/Scripts/power_profile.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-runner/examples/batterystats/config_web.json" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/examples/batterystats/config_web.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfumejs_host/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfumejs_host/hosts_mapping.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfumejs_host/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfumejs_host/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfumejs_host/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfumejs_host/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfumejs_host/static/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfumejs_host/static/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfumejs_host/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/perfume_js/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/AndroidRunner/Plugins/perfume_js/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/config_web.json" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/config_web.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/config_web_template.json" beforeDir="false" afterPath="$PROJECT_DIR$/android-runner/examples/perfume_trepn/config_web_template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/RANDOMLY_SAMPLED_WEBSITES.csv" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/RANDOMLY_SAMPLED_WEBSITES.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/inject_perfume.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/inject_perfume.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/android-runner/examples/perfume_trepn/Scripts" />
+    <property name="settings.editor.selected.configurable" value="RainbowCSV.Settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -214,6 +188,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1830" height="336" key="GridCell.Tab.1.right/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1601215313204" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1602292242983">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/1920.20.1920.1080@67.27.1853.1053" timestamp="1602292242983" />
     <state x="684" y="291" width="1055" height="522" key="find.popup" timestamp="1602258161929">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

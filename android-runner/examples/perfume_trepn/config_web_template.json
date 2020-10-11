@@ -4,7 +4,7 @@
     "nexus5x": {}
   },
   "repetitions": 1,
-  "duration": 10000,
+  "duration": 15000,
   "clear_cache": true,
   "browsers": ["chrome"],
   "monkeyrunner_path": "/home/user/Android/Sdk/tools/bin/monkeyrunner",
@@ -37,5 +37,5 @@
     "after_run": "Scripts/after_run.py",
     "after_experiment": "Scripts/after_experiment.py"
   },
-  "time_between_run": 2000
+  "time_between_run": 120000
 }

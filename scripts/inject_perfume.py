@@ -6,11 +6,15 @@ import argparse
 def add_script_to_html(html_path, ip):
     print("Injecting Perfume scripts into the following html file: " + html_path)
     soup = BeautifulSoup(open(html_path, "rb"), "lxml")
+    with open("./static/send_perfume_metrics.js") as js_in:
+        js_to_inject = js_in.read()
+        js_to_inject = js_to_inject % ip
+    print(js_to_inject)
     if soup.find("head"):
         perfumeSource = soup.new_tag('script')
         perfumeSource['src'] = "/static/perfume.umd.min.js"
         script = soup.new_tag('script')
-        script.string = "perfumeResults = []; function xml_http_post(url, data, callback) {var req = new XMLHttpRequest(); req.open(\"POST\", url, true); req.send(data);} const perfume = new Perfume({  analyticsTracker: (options) => {    const { metricName, data, eventProperties, navigatorInformation } = options; perfumeResults.push(options); } }); function load_log() { setTimeout(function(){ objectToSend = \"{'perfumeResults':\"+JSON.stringify(perfumeResults)+\"}\"; xml_http_post(\"" + ip + "\",objectToSend,null); },5000); };window.addEventListener ?window.addEventListener(\"load\",load_log, true) : window.attachEvent && window.attachEvent(\"onload\", load_log);"
+        script.string = js_to_inject
         soup.head.insert(0, perfumeSource)
         soup.head.insert(1, script)
 

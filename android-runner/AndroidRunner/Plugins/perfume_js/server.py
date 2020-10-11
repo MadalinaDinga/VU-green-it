@@ -4,7 +4,7 @@ import time
 import csv
 import os
 
-navigationTime= {'fetchTime':0 , 'workerTime':0 , 'totalTime':0, 'downloadTime':0, 'timeToFirstByte':0, 'headerSize':0, 'dnsLookupTime': 0}
+navigationTime= {'totalLoadTime': 0, 'fetchTime':0 , 'workerTime':0 , 'totalTime':0, 'downloadTime':0, 'timeToFirstByte':0, 'headerSize':0, 'dnsLookupTime': 0}
 networkInf = {'downlink': 0, 'effectiveType': 0, 'rtt':0, 'saveData':False}
 storageEstimate = {'quota':0, 'usage':0, 'caches':0, 'indexedDB':0, 'serviceWorker':0}
 fpResult = {'fp':0}
@@ -21,7 +21,10 @@ class TestHandler(BaseHTTPRequestHandler):
         length = int(self.headers['Content-Length']) # <--- Gets the size of data      
         data_string = self.rfile.read(length)
         data_string = data_string.decode("utf-8")
-        
+
+        if 'timeLoaded' in data_string:
+            navigationTime['totalLoadTime'] = data_string.split("'timeLoaded\':")[1].split(",\'perfumeResults\'")[0]
+
         if 'perfumeResults' in data_string:	
             if 'navigationTiming' in data_string:
                navigationTime['fetchTime'] = data_string.split("fetchTime\":")[1].split(",\"workerTime")[0]
@@ -126,3 +129,7 @@ def stop_server():
    """Stop the server."""
    global httpd
    httpd.server_close()
+
+
+if __name__ == '__main__':
+    start_server()
