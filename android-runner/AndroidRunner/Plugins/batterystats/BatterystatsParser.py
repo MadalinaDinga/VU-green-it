@@ -33,25 +33,36 @@ def get_amp_value(power_profile, component, state=''):
     xmlfile = minidom.parse(power_profile)
     itemlist = xmlfile.getElementsByTagName('item')
     arraylist = xmlfile.getElementsByTagName('array')
-    value_index = 0
+
     for item in itemlist:
         itemname = item.attributes['name'].value
         milliamps = item.childNodes[0].nodeValue
         if profilename == itemname:
             return float(milliamps) / 1000.0
+
+    value_index = 0
+    cpu_cluster_index = 0
+    regex_cpu_speeds_cluster = r'cpu\.speeds\.cluster(\d+)'
+    regex_cpu_active_cluster = r'cpu\.active\.cluster(\d+)'
+
     for arrays in arraylist:
         arrayname = arrays.attributes['name'].value
-        if arrayname == 'cpu.speeds':
+        matches = re.match(regex_cpu_speeds_cluster, arrayname)
+        if matches:
             valuelist = arrays.getElementsByTagName('value')
             for i in range(valuelist.length):
                 value = valuelist.item(i).childNodes[0].nodeValue
                 if value == state:
+                    cpu_cluster_index = matches.group(1)
                     value_index = i
-        if arrayname == 'cpu.active':
+
+    for arrays in arraylist:
+        arrayname = arrays.attributes['name'].value
+        matches = re.match(regex_cpu_active_cluster, arrayname)
+        if matches and matches.group(1) == cpu_cluster_index:
             valuelist = arrays.getElementsByTagName('value')
             milliamps = valuelist.item(value_index).childNodes[0].nodeValue
             return float(milliamps) / 1000.0
-
 
 '''
 Batterystats

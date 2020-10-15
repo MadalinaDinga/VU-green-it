@@ -26,7 +26,7 @@ files
 
 
 # Read data from file 'Aggregated_Results_Batterystats.csv' 
-aggregated_battery_stats = pd.read_csv('Aggregated_Results_Batterystats.csv') 
+aggregated_battery_stats = pd.read_csv('4g/2020.10.11_192407/Aggregated_Results_Batterystats.csv')
 # Preview the first 5 lines of the loaded data 
 aggregated_battery_stats.head()
 
@@ -70,7 +70,7 @@ for i in range (0, len(aggregated_battery_stats)):
                 fp_df = fp_df.append(fp_for_website[:1], sort=False, ignore_index=True)
 
 
-# In[7]:
+# In[7]:2020.10.11_192407
 
 
 assert(i+1==len(navigation_timing_df))

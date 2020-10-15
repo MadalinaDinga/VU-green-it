@@ -9,19 +9,30 @@ def add_script_to_html(html_path, ip):
     with open("./static/send_perfume_metrics.js") as js_in:
         js_to_inject = js_in.read()
         js_to_inject = js_to_inject % ip
-    print(js_to_inject)
+
     if soup.find("head"):
+        script_perfume_add = soup.find(id="script-perfume-add")
+        if script_perfume_add:
+            script_perfume_add.decompose()
+
         perfumeSource = soup.new_tag('script')
+        perfumeSource['id'] = 'script-perfume-add'
         perfumeSource['src'] = "/static/perfume.umd.min.js"
-        script = soup.new_tag('script')
-        script.string = js_to_inject
         soup.head.insert(0, perfumeSource)
+
+        script_perfume_sender = soup.find(id="script-perfume-sender")
+        if script_perfume_sender:
+            script_perfume_sender.decompose()
+
+        script = soup.new_tag('script')
+        script['id'] = 'script-perfume-sender'
+        script.string = js_to_inject
         soup.head.insert(1, script)
 
     with open(html_path, "w") as file:
         file.write(str(soup))
 
-    print("Finished injecting perfume scripts")
+    print("Finished injecting perfume scripts for %s" % html_path)
 
 def inject_perfume(webpages_directory ,ip):
     for directory in os.listdir(webpages_directory):
