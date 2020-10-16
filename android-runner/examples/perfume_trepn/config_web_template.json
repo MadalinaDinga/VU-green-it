@@ -10,9 +10,7 @@
   "monkeyrunner_path": "/home/user/Android/Sdk/tools/bin/monkeyrunner",
   "systrace_path": "/home/corneliu/Android/Sdk/platform-tools/systrace/systrace.py",
   "powerprofile_path": "power_profiles/power_profile_nexus5x.xml",
-  "paths": [
-    "http://192.168.100.14:9191/local_websites/www.google.com/"
-  ],
+  "paths": [],
   "profilers": {
     "batterystats": {
       "cleanup": true
@@ -22,8 +20,11 @@
     }
   },
   "scripts": {
+    "before_experiment": "Scripts/before_experiment.py",
     "after_launch": "Scripts/after_launch.py",
-    "after_run": "Scripts/after_run.py"
+    "after_run": "Scripts/after_run.py",
+    "after_experiment": "Scripts/after_experiment.py"
   },
-  "time_between_run": 120000
+  "time_between_run": 120000,
+  "randomization": true
 }

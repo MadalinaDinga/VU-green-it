@@ -12,7 +12,7 @@ import pandas as pd
 
 
 # Change REP_DIR to the folder containing all repetitions for a block (network condition)
-REPS_DIR = "4g"
+REPS_DIR = "wifi"
 os.chdir(REPS_DIR)
 
 

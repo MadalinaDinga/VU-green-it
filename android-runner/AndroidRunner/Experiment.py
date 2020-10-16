@@ -38,6 +38,7 @@ class Experiment(object):
         Tests.check_dependencies(self.devices, self.profilers.dependencies())
         self.output_root = paths.OUTPUT_DIR
         self.result_file_structure = None
+        self.three_g = config.get('three_g', False)
         if restart:
             for device in self.devices:
                 self.prepare_device(device, restart=True)
@@ -152,14 +153,14 @@ class Experiment(object):
         device = self.devices.get_device(current_run['device'])
         if self.progress.device_first(current_run['device']):
             self.prepare_device(device)
-            self.before_experiment(device)
+            self.before_experiment(device, three_g=self.three_g)
 
     def before_every_run_subject(self, current_run):
         self.before_run_subject(self.devices.get_device(current_run['device']), current_run['path'])
 
     def last_run_device(self, current_run):
         if self.progress.device_finished(current_run['device']):
-            self.after_experiment(self.devices.get_device(current_run['device']))
+            self.after_experiment(self.devices.get_device(current_run['device']), three_g=self.three_g)
 
     def last_run_subject(self, current_run):
         if self.progress.subject_finished(current_run['device'], current_run['path']):

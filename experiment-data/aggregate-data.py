@@ -26,7 +26,7 @@ files
 
 
 # Read data from file 'Aggregated_Results_Batterystats.csv' 
-aggregated_battery_stats = pd.read_csv('4g/2020.10.11_192407/Aggregated_Results_Batterystats.csv')
+aggregated_battery_stats = pd.read_csv('wifi/2020.10.11_192407/Aggregated_Results_Batterystats.csv')
 # Preview the first 5 lines of the loaded data 
 aggregated_battery_stats.head()
 
