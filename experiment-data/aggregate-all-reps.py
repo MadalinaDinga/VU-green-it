@@ -33,7 +33,7 @@ repetition_files
 # In[5]:
 
 
-assert(12, ) # check 12 repetitions
+assert(11 == len(repetition_files)) # check that no of repetitions is 11
 
 
 # In[6]:
@@ -90,7 +90,6 @@ for rep_dir in repetition_files:
     assert(len(aggregated_rep_df) == 30)
     
     # Add repetition timestamp (corresponds to rep folder name)
-#     rep_name_df = pd.DataFrame([[rep_dir]], columns=['timestamp'] for i in range 30)
     rep_name_df = pd.concat([pd.DataFrame([rep_dir], columns=['timestamp']) for i in range(30)], ignore_index=True)
     
     aggregated_rep_df = pd.concat([aggregated_rep_df, rep_name_df], axis = 1)
@@ -106,7 +105,7 @@ for rep_dir in repetition_files:
 # In[8]:
 
 
-assert(len(all_aggregated_reps) == 12*30) # 12 repetitions, 30 websites (360)
+assert(len(all_aggregated_reps) == 11*30) # 11 repetitions, 30 websites (330)
 
 
 # In[9]:
